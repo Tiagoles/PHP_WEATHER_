@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', 'sans-serif';
+}
+html, body{
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    background-color: #F6F8FC;
+}
+
+nav {
+    color: white;
+    background-color: #183153;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+hr{
+    border-color: blue; /* Cor da borda */
+    border-width: 2px; /* Espessura da linha */
+    border-style: dashed; /* Estilo da linha */
+}
+#container {
+    display: flex;
+    min-height: 30vh;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+#Local{
+    outline: none;
+    height: 35px;
+    width: 32vh;
+    border-color: #87CEFA;
+    border-radius: 5px;
+}
+input:focus{
+    background-color: rgb(214, 214, 214);
+}
+#button-pesquisa {
+    height: 35px;
+    width: 40px;
+    border-radius: 5px; 
+    margin: 0 0 0 5px;
+    cursor: pointer;
+    background: #183153;
+    color: white;
+    border: none;
+}
+
+#button-pesquisa:hover {
+    border: 1px solid#3e5b82;
+    box-shadow: 1px 2px 4px #87CEFA;
+}
+#data-clima{
+    color: white;
+    position: absolute;
+    margin-top: 50vh;
+    background: #3e5b82;
+    padding: 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+#country  {
+  height: 25px;
+}
+#detalhes-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#detalhes-container p {
+    padding: 15px;
+}
+#detalhes-container #umidade{
+    border-right:1px solid #fff;
+    margin-left:5px;
+}
+#temperatura, #descricao-container, #detalhes-container{
+    margin-top: 15px;
+}
+#descricao-container, #detalhes-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

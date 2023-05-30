@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<?php
+    include('api.php');
+?>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,14 +25,13 @@
         </div>
     </nav>
 </header>
-
 <body>
     <main>
         <div id="container">
             <div id="container-form">
-                <form action="home.php" method="post">
+                <form method="post">
                     <input type="text" name="Local" id="Local" placeholder="Digite uma cidade">
-                    <button id="button-pesquisa">
+                    <button type="submit" id="button-pesquisa">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </form>
@@ -59,12 +60,10 @@
                         <i class="fa-solid fa-wind"></i>
                         <span>--</span>
                     </p>
-
                 </div>
             </div>
         </div>
     </main>
     <script src="./script.js"></script>
 </body>
-
 </html>

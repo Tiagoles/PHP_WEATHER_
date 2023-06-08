@@ -45,7 +45,7 @@ include('../controller/controller.php');
             <div id="data-clima">
                 <h2>
                     <i class="fa-solid fa-location-dot"></i>
-                    <span id="city"></span>
+                        <a href="#" id="city"></a>
                     <img src="https://flagsapi.com/flat/64.png" alt="bandeira do pais" id="country">
                 </h2>
                 <p id="temperatura">

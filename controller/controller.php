@@ -26,13 +26,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                 $VentoVelocidade = $responseApi['wind']['speed'];
                 $descricaoTempo = $responseApi['weather'][0]['description'];
                 $iconClima = $responseApi['weather'][0]['icon'];
+                
             ?>
                 <script>
                     $('#data-clima').show();
                     $('#data-clima').css('display', '');
                     $('#country').attr("src", 'https://flagsapi.com/<?php echo $Pais?>/flat/64.png');
                     $('#city').html('<?php echo $NomeCidade?>');
-                    $('#temperatura span').html('<?= $temperatura ?>');
+                    $('#city').attr('href', 'https://www.google.com/maps/place/<?=str_replace('', '+' , $NomeCidade)  ?>')
+                    $('#temperatura span').html('<?= intval( $temperatura) ?>');
                     $('#descricao').html('<?= ucfirst($descricaoTempo) ?>');
                     $('#icon-clima').attr('src', 'http://openweathermap.org/img/wn/<?=$iconClima?>.png')
                     $('#umidade span').html('<?=$Umidade?>%');

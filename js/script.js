@@ -13,7 +13,6 @@ $(document).ready(function () {
             method: $(this).attr('method'),
             data: formData,
             success: function (response) {
-                console.log($('#data-clima span'));
                 $('#response').html(response);
             },
             error: function (xhr, status, error) {

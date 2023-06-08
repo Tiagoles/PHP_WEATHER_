@@ -64,6 +64,14 @@ input:focus{
     border-radius: 5px;
     text-align: center;
 }
+#city{
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+}
+#city:hover{
+    color: rgb(198, 198, 198);
+}
 #country  {
   height: 25px;
 }

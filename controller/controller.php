@@ -1,7 +1,7 @@
 <?php
 include("../model/class.php");
 require("../vendor/autoload.php");
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/..');
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ .'/..');
 $dotenv->load();
 $getkey = getenv('apiKey');
 $key = $_ENV['apiKey'];
@@ -14,7 +14,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         } 
             if($responseApi == null){
                 ?>
-                <script>  $("#data-clima").hide();</script>
+                <script>$("#data-clima").hide();</script>
                 <?php
                 echo '<div class="alert alert-danger text-danger alert-dismissible fade show" role="alert"><button class="btn btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>Cidade não encontrada, tente Novamente.</div>';
             }   

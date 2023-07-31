@@ -1,9 +1,4 @@
- 
-
-const url = 'controller/controller.php'
- 
 $(document).ready(function () {
-   
     $("#data-clima").hide();
     $('#form').submit(function (event) {
         event.preventDefault();
